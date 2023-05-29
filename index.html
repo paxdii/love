@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>I love you</title>
+
+<style>
+body {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h1 id="typewriter"></h1>
+
+<script>
+var i = 0;
+var txt = 'Dies ist ein Beispieltext, der wie auf einer Schreibmaschine geschrieben wird... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim eget turpis cursus aliquam. Nulla facilisi. Sed gravida leo et justo lobortis, vitae congue velit egestas. Donec eget semper neque, vel elementum lacus. Fusce euismod risus non felis interdum, a dictum nibh accumsan. Sed non mollis dui. Suspendisse potenti. Proin euismod, mauris nec ullamcorper vestibulum, sapien odio hendrerit tortor, ut iaculis arcu velit nec quam. Vivamus ut velit eget felis iaculis sodales. Nulla facilisi. Suspendisse hendrerit auctor sem, at blandit lacus pharetra in. Sed luctus, tellus quis bibendum interdum, velit odio lacinia sapien, vel malesuada massa erat vel nisl. Sed tristique, augue non tincidunt bibendum, felis nisl facilisis turpis, eu ultrices turpis dolor vel sem.'; /* Der Text */
+var speed = 20; /* Die Geschwindigkeit/Schreibverzögerung in Millisekunden */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typewriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+
+</body>
+</html>
