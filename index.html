@@ -12,13 +12,24 @@ body {
   font-family: monospace;
   background-color: black;
   color: white;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  padding: 2em;
+  overflow-y: scroll;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+/* @keyframes scroll {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(-100%);}
+}
 
+#typewriter {
+  animation: scroll 30s linear infinite;
+} */
 </style>
 
 </head>
@@ -27,20 +38,43 @@ body {
 <h1 id="typewriter"></h1>
 
 <script>
-var i = 0;
-var txt = 'Dies ist ein Beispieltext, der wie auf einer Schreibmaschine geschrieben wird... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim eget turpis cursus aliquam. Nulla facilisi. Sed gravida leo et justo lobortis, vitae congue velit egestas. Donec eget semper neque, vel elementum lacus. Fusce euismod risus non felis interdum, a dictum nibh accumsan. Sed non mollis dui. Suspendisse potenti. Proin euismod, mauris nec ullamcorper vestibulum, sapien odio hendrerit tortor, ut iaculis arcu velit nec quam. Vivamus ut velit eget felis iaculis sodales. Nulla facilisi. Suspendisse hendrerit auctor sem, at blandit lacus pharetra in. Sed luctus, tellus quis bibendum interdum, velit odio lacinia sapien, vel malesuada massa erat vel nisl. Sed tristique, augue non tincidunt bibendum, felis nisl facilisis turpis, eu ultrices turpis dolor vel sem.'; /* Der Text */
-var speed = 20; /* Die Geschwindigkeit/Schreibverzögerung in Millisekunden */
+    var i = 0;
+    var j = 0;
+    var txt = `Hallo Bebi, 
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typewriter").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
-typeWriter();
-</script>
+    Ich wünsche dir in erster Linie viel spaß bei deiner Reise und deinem Aufenthalt in unserem Heimatsland. 
+    Leider bin ich nicht dazugekommen dir etwas auszudrucken daher werde ich es auf meine Art machen :) 
+    
+    Ich bin dir sehr dankbar für die Zeit die wir gemeinsam auf unserem kurz Urlaub verbringen konnten. 
+    Du bist der erste und einzige Mensch der so viele und schöne Erinnerungen in meiner Gallerie hinterlässt und es ist einfach wunderschön daran zu denken das du in meinem Leben bist. 
+    Wie viele haben sowas was wir haben? …Ein Wochenende mitten während der Schulzeit am Strand in einem 4 Sterne Hotel… nur wir 2 am Balkon während die Sonne untergeht (und ich dich von hinten durchnehme). 
+    Und ja keine Sorge wir werden schon noch ins Meer gehen es war nur etwas kalt ;) 
+    
+    Du gibts mich niamals her. 
+    Das erfreut mein Herz wenn ich es höre. 
+    Ich werde es auch niemals tun. Danke das es dich gibt und ich mit dir Sachen erleben darf die ich vorher nicht erleben konnte.
+    
+    Den Brief bekommst du noch auf Papier mit einem 2ten Teil.
+    Nächste Überracschung folgt auf dieser Seite demnächst.
+    `; /* Der Text */
+    var speed = 70; /* Die Geschwindigkeit/Schreibverzögerung in Millisekunden */
+    var lines = txt.split('\n');
+    
+    function typeWriter() {
+      if (i < lines[j].length) {
+        document.getElementById("typewriter").innerHTML += lines[j].charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else if (j < lines.length - 1) {
+        document.getElementById("typewriter").innerHTML += '<br>';
+        i = 0;
+        j++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    
+    typeWriter();
+    </script>
 
 </body>
 </html>
