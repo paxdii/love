@@ -1,94 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <title>I love you</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>I love you</title>
 
 <style>
 body {
-  font-family: monospace;
   background-color: black;
-  color: white;
+  margin: 0;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-
-/* @keyframes scroll {
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(-100%);}
+h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
-#typewriter {
-  animation: scroll 30s linear infinite;
-} */
+video {
+  max-width: 100%;
+  max-height: 70%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #008CBA; /* Blue */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: white; 
+  color: black; 
+}
 </style>
-
 </head>
 <body>
 
-<h1 id="typewriter"></h1>
+<h1>Unser Urlaub ❤️ <br> Bin jetzt richtiger Tiktok profi 😂</h1>
 
-<script>
-    var i = 0;
-    var j = 0;
-    var txt = `Hallo Bebi, 
+<video id="myVideo" controls>
+  <source src="video.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-    Ich wünsche dir in erster Linie viel spaß bei deiner Reise und deinem Aufenthalt in unserem Heimatsland. 
-
-    Leider bin ich nicht dazugekommen dir etwas auszudrucken daher werde ich es auf meine Art machen :) 
-    
-
-    Ich bin dir sehr dankbar für die Zeit die wir gemeinsam auf unserem kurz Urlaub verbringen konnten. 
-
-    Du bist der erste und einzige Mensch der so viele und schöne Erinnerungen in meiner Gallerie hinterlässt und es ist einfach wunderschön daran zu denken das du in meinem Leben bist. 
-   
-    Wie viele haben sowas was wir haben? 
-    …Ein Wochenende mitten während der Schulzeit am Strand in einem 4 Sterne Hotel… nur wir 2 am Balkon während die Sonne untergeht (und ich dich von hinten durchnehme). 
-   
-    Und ja keine Sorge wir werden schon noch ins Meer gehen es war nur etwas kalt ;) 
-    
-
-    
-    Du gibts mich niamals her. 
-    Das erfreut mein Herz wenn ich es höre. 
-    Ich werde es auch niemals tun. 
-
-    Danke das es dich gibt und ich mit dir Sachen erleben darf die ich vorher nicht erleben konnte.
-    
-
-    
-    Den Brief bekommst du noch auf Papier mit einem 2ten Teil.
-    
-    Nächste Überracschung folgt auf dieser Seite demnächst.
-    
-    `; /* Der Text */
-    var speed = 70; /* Die Geschwindigkeit/Schreibverzögerung in Millisekunden */
-    var lines = txt.split('\n');
-    
-    function typeWriter() {
-  if (i < lines[j].length) {
-    document.getElementById("typewriter").innerHTML += lines[j].charAt(i);
-    i++;
-    window.scrollTo(0,document.body.scrollHeight);
-    setTimeout(typeWriter, speed);
-  } else if (j < lines.length - 1) {
-    document.getElementById("typewriter").innerHTML += '<br>';
-    i = 0;
-    j++;
-    window.scrollTo(0,document.body.scrollHeight);
-    setTimeout(typeWriter, speed);
-  }
-}
-    
-    typeWriter();
-    </script>
+<a href="movie.mp4" download class="button">Download Video <3</a>
 
 </body>
 </html>
