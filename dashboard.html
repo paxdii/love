@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>I love you</title>
+    <style>
+      body {
+        font-family: monospace;
+        background-image: url("https://images.unsplash.com/photo-1671159593326-80a2c134fc6a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        margin: 0;
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 1em;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        max-width: 800px;
+        width: 100%;
+      }
+      .box {
+        backdrop-filter: blur(10px) brightness(0.8);
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      .big {
+        grid-column: span 2;
+        height: 150px;
+      }
+      .box img {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Bebi's Dashboard</h1>
+      <div class="container">
+        <div class="box big">
+          <img src="https://cdn-icons-png.flaticon.com/128/9484/9484251.png" />
+          <p>Zusammen seit</p>
+          <p id="timer"></p>
+        </div>
+        <div class="box">
+          <p>Inhalt Box 1</p>
+        </div>
+        <div class="box">
+          <p>Inhalt Box 2</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Startdatum eingeben (im Format YYYY-MM-DD)
+      const startDate = new Date("2023-01-29");
+
+      function calculateDays() {
+        const today = new Date();
+        const difference = today - startDate;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        document.getElementById("timer").innerText = days + " Tage";
+      }
+
+      calculateDays();
+    </script>
+  </body>
+</html>
