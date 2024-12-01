@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Advent Calendar</title>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/128/9484/9484251.png"
+    />
+    <title>I love you - Aadvent Calendar</title>
 
-	  	<!-- Mobile-friendly viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheet link -->
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Lato:300,400,700"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" media="all" />
+  </head>
 
-	   	<!-- Style sheet link -->
-		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato:300,400,700'>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
-		<link rel="stylesheet" href="style.css" media="all">
+  <!-- Body -->
+  <body>
+    <div class="demo-content cf">
+      <article>
+        <img
+          src="images/background.jpg"
+          alt="Advent Calendar"
+          width="400"
+          height="533"
+          id="adventCal"
+        />
+        <ul id="adventDoors"></ul>
+      </article>
+    </div>
 
-	</head>
-
-	<body>
-
-		<header class="demo-header cf">
-			<h1>Advent Calendar</h1>
-			<a href="http://hongkiat.com">Go to the Article</a>
-		</header>
-
-		<div class="demo-content cf">
-			<article>
-				<h1>Advent Calendar</h1>
-
-				<img src="images/background.jpg" alt="Advent Calendar" width="400" height="533" id="adventCal">
-
-				<ul id="adventDoors"></ul>
-			</article>
-		</div>
-
-		<script src="scripts/messages.js"></script>
-		<script src="scripts/calendar.js"></script>
-		
-	</body>
+    <!-- JS -->
+    <script src="messages.js"></script>
+    <script src="calendar.js"></script>
+  </body>
 </html>
