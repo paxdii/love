@@ -1,33 +1,15 @@
-const myCal = document.getElementById("adventCal");
+const adventDoors = document.getElementById("adventDoors");
 const currentDate = new Date();
 
-function Door(calendar, day) {
-  this.width = ((calendar.width - 0.1 * calendar.width) / 4) * 0.95;
-  this.height = ((calendar.height - 0.1 * calendar.height) / 6) * 0.95;
+function Door(day) {
   this.adventMessage = day + ". Dezember\n\n" + messages[day - 1][0];
-  this.x = 0.04 * calendar.width + ((day - 1) % 4) * (1.1 * this.width);
-  this.y = -(
-    0.96 * calendar.height -
-    Math.floor((day - 1) / 4) * (1.1 * this.height)
-  );
 
   this.content = function () {
     const node = document.createElement("li");
-    document.getElementById("adventDoors").appendChild(node);
-    node.id = "door" + day;
-    node.style.cssText =
-      "width: " +
-      this.width +
-      "px; height: " +
-      this.height +
-      "px; top: " +
-      this.y +
-      "px; left: " +
-      this.x +
-      "px;";
+    adventDoors.appendChild(node);
 
     const innerNode = document.createElement("a");
-    document.getElementById("door" + day).appendChild(innerNode);
+    node.appendChild(innerNode);
     innerNode.innerHTML = day;
     innerNode.href = "#";
 
@@ -47,12 +29,8 @@ function Door(calendar, day) {
 }
 
 (function () {
-  let doors = [];
-
-  for (let i = 0; i < 24; i++) {
-    doors[i] = new Door(myCal, i + 1);
-    doors[i].content();
+  for (let i = 1; i <= 24; i++) {
+    const door = new Door(i);
+    door.content();
   }
-
-  return doors;
 })();

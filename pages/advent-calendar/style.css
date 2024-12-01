@@ -1,66 +1,81 @@
-html {
+/* General Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-.cf {
-  zoom: 1;
-}
-body {
-  margin: 0;
-  background-color: #e6e9ed;
-  font-family: "Lato", sans-serif;
-}
-.demo-content {
-  max-width: 400px;
-  margin-top: 90px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 90px;
-}
 
-/* Styles for the Advent Calendar */
-ul#adventDoors {
-  position: relative;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#adventDoors li {
-  position: absolute;
-}
-#adventDoors li a {
-  color: #fff;
+/* Fullscreen Background Image */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  font-size: 24px;
-  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1606844358484-ab8725cab420?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWR2ZW50JTIwY2FsZW5kYXJ8ZW58MHx8MHx8fDA%3D")
+      no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Calendar Container */
+.calendar-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-decoration: none;
-  border: 1px #fff solid;
+  align-items: center;
+  height: 100%;
 }
-#adventDoors li a:not(.disabled):hover {
+
+#adventDoors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+#adventDoors li {
+  position: relative;
+  padding-top: 100%; /* Makes the div a square */
+}
+
+#adventDoors li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
-  background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: background 0.3s;
 }
+
+#adventDoors li a:not(.disabled):hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 #adventDoors li a.disabled {
-  border-color: #f3aaed;
-  background-color: rgba(196, 254, 171, 0.15);
-  color: #f3aaed;
-  cursor: default;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.5);
+  cursor: not-allowed;
 }
