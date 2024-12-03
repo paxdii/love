@@ -4,9 +4,11 @@ const messages = [
   ],
   ["Heute gibt es eine Schoki, die bei mir abzuholen ist."],
   [
-    "Für das morgige Türchen musst du den Kalender in der Früh nach dem Aufstehen öffnen",
+    "Heute keine besondere Nachricht, weil du leider zu spät das Passwort eingegeben hast ;(",
   ],
-  ["4"],
+  [
+    "Für das morgige Türchen (5. Dezember) musst du den Kalender gleich in der Früh nach dem Aufstehen öffnen",
+  ],
   ["5"],
   ["6"],
   ["7"],
