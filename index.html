@@ -45,13 +45,17 @@
   <body>
     <div>
       <h1>Passwort eingeben</h1>
+      <p>
+        Tipp: Das erste Land, wo wir gemeinsam Urlaub gemacht haben
+        (kleingeschrieben)
+      </p>
       <input type="text" id="password" placeholder="Passwort" />
       <button onclick="checkPassword()">Weiter</button>
     </div>
 
     <script>
       function checkPassword() {
-        const correctPassword = "liebe123"; //Passwort ändern
+        const correctPassword = "slowenien"; //Passwort ändern
         const input = document.getElementById("password").value;
         if (input === correctPassword) {
           window.location.href = "dashboard.html"; // Hauptseite verlinken
