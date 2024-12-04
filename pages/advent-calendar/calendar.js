@@ -12,7 +12,7 @@ function Door(day) {
     node.appendChild(innerNode);
     innerNode.innerHTML = day;
     innerNode.href = "#";
-    const linkedDoors = [3]; // Beispiel: Tür 5 ist ein Link
+    const linkedDoors = [4]; // Beispiel: Tür 5 ist ein Link
 
     if (currentDate.getMonth() + 1 < 12 || currentDate.getDate() < day) {
       // Türen für zukünftige Tage sperren
