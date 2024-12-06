@@ -13,7 +13,9 @@ const messages = [
     "Guten Morgen Bebi! Da du dir letztens eine Guten Morgen Nachricht gewunschen hast, bekommst du eine. \n Ich hoffe du hast gut geschlafen und hast einen wunderbaren start in den Tag mit allen guten und schlechten sachen daran, aber vor allem die guten. \n Ich freue mich sehr über deine mühe beim Advendkalender und schätze sehr wie viel liebe du mir damit gibst. Ich bin auch sehr stolz auf dich, wie du in dir Arbeit gesucht hast und als Babysitterin sicher perfekt auf diese Kinder aufpasst. Jetzt hast du auch eine Aktivität, die dir spaß macht und mit der du Geld verdienen kannst, wie ich, wie du es damals wolltest. Gut gemacht!",
   ],
   ["Gewonnen! 1x Schoki (Bei mir abzuholen)"],
-  ["7"],
+  [
+    "Ich spiele eine Servd Karte! Du musst eine Aktivität mit mir ausführen, nämlich mit mir dein nächstest Adventkalender Türchen programmieren.",
+  ],
   ["8"],
   ["9"],
   ["10"],
