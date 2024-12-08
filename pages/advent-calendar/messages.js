@@ -14,9 +14,11 @@ const messages = [
   ],
   ["Gewonnen! 1x Schoki (Bei mir abzuholen)"],
   [
+    "Leider sind wir nicht mehr dazu gekommen, das Kätschen 7 auszuüben, weshalb ich es nach vorne verschoben habe. \n Allerdings finde ich das nicht so schlimm, weil ich mit dir wirklich einen tollen Tag hatte. Und diese Nacht hätte ich mit niemanden anderes lieber verbracht als mit dir.",
+  ],
+  [
     "Ich spiele eine Servd Karte! Du musst eine Aktivität mit mir ausführen, nämlich mit mir dein nächstest Adventkalender Türchen programmieren.",
   ],
-  ["8"],
   ["9"],
   ["10"],
   ["11"],
