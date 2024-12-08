@@ -16,11 +16,11 @@ const messages = [
   [
     "Leider sind wir nicht mehr dazu gekommen, das Kätschen 7 auszuüben, weshalb ich es nach vorne verschoben habe. \n Allerdings finde ich das nicht so schlimm, weil ich mit dir wirklich einen tollen Tag hatte. Und diese Nacht hätte ich mit niemanden anderes lieber verbracht als mit dir.",
   ],
+  ["Schicksal ist, wenn sich zwei finden, die sich nie gesucht haben."],
+  ["Die Vernunft kann nur reden. Es ist die Liebe, die singt."],
   [
     "Ich spiele eine Servd Karte! Du musst eine Aktivität mit mir ausführen, nämlich mit mir dein nächstest Adventkalender Türchen programmieren.",
   ],
-  ["9"],
-  ["10"],
   ["11"],
   ["12"],
   ["13"],
