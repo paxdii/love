@@ -21,7 +21,7 @@ const messages = [
   [
     "Ich spiele eine Servd Karte! Du musst eine Aktivität mit mir ausführen, nämlich mit mir dein nächstest Adventkalender Türchen programmieren.",
   ],
-  ["11"],
+  ["Ein Funken Liebe ist mehr wert als ein Sack voll Gold."],
   ["12"],
   ["13"],
   ["14"],
