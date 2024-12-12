@@ -22,7 +22,9 @@ const messages = [
     "Ich spiele eine Servd Karte! Du musst eine Aktivität mit mir ausführen, nämlich mit mir dein nächstest Adventkalender Türchen programmieren.",
   ],
   ["Ein Funken Liebe ist mehr wert als ein Sack voll Gold."],
-  ["12"],
+  [
+    "Danke das du dir die Mühe gegeben hast und heute vorbeigekommen bist! Das muss man auch mal sagen, weil es nicht selbstverstädlich ist so jemanden zu haben.\n Es ist keine Kunst, die Welt zu erobern. Wenn du kannst, erobere ein Herz.",
+  ],
   ["13"],
   ["14"],
   ["15"],
