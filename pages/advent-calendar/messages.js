@@ -8,7 +8,7 @@ const messages = [
   [
     "Für das Türchen am 5. Dezember musst du den Kalender gleich in der Früh nach dem Aufstehen öffnen",
   ],
-  ["Link"],
+  ["Link abgelaufen"],
   [
     "Guten Morgen Bebi! Da du dir letztens eine Guten Morgen Nachricht gewunschen hast, bekommst du eine. \n Ich hoffe du hast gut geschlafen und hast einen wunderbaren start in den Tag mit allen guten und schlechten sachen daran, aber vor allem die guten. \n Ich freue mich sehr über deine mühe beim Advendkalender und schätze sehr wie viel liebe du mir damit gibst. Ich bin auch sehr stolz auf dich, wie du in dir Arbeit gesucht hast und als Babysitterin sicher perfekt auf diese Kinder aufpasst. Jetzt hast du auch eine Aktivität, die dir spaß macht und mit der du Geld verdienen kannst, wie ich, wie du es damals wolltest. Gut gemacht!",
   ],
@@ -25,11 +25,15 @@ const messages = [
   [
     "Danke das du dir die Mühe gegeben hast und heute vorbeigekommen bist! Das muss man auch mal sagen, weil es nicht selbstverstädlich ist so jemanden zu haben.\n Es ist keine Kunst, die Welt zu erobern. Wenn du kannst, erobere ein Herz.",
   ],
-  ["13"],
-  ["14"],
+  ["Link"],
+  [
+    "Die wichtigen Dinge im Leben sollte man immer bei sich haben.\n Aber wie passt du in meinem Rucksack?",
+  ],
   ["15"],
   ["16"],
-  ["17"],
+  [
+    "Heute gehe ich shoppen und das fast nur für dich :) \n Ein Tipp was ich schon habe: heiß, rot.\n Alles Weitere darfst du leider nicht wissen. Wahrscheinlich weiß ich nichtmal mehr, weil ich ja noch nicht weiß was ich heute kaufe ;)",
+  ],
   ["18"],
   ["19"],
   ["20"],
