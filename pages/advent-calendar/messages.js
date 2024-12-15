@@ -25,11 +25,11 @@ const messages = [
   [
     "Danke das du dir die Mühe gegeben hast und heute vorbeigekommen bist! Das muss man auch mal sagen, weil es nicht selbstverstädlich ist so jemanden zu haben.\n Es ist keine Kunst, die Welt zu erobern. Wenn du kannst, erobere ein Herz.",
   ],
-  ["Link"],
+  ["Link abgelaufen"],
   [
     "Die wichtigen Dinge im Leben sollte man immer bei sich haben.\n Aber wie passt du in meinem Rucksack?",
   ],
-  ["15"],
+  ["Link"],
   ["16"],
   [
     "Heute gehe ich shoppen und das fast nur für dich :) \n Ein Tipp was ich schon habe: heiß, rot.\n Alles Weitere darfst du leider nicht wissen. Wahrscheinlich weiß ich nichtmal mehr, weil ich ja noch nicht weiß was ich heute kaufe ;)",

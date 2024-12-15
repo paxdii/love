@@ -12,7 +12,7 @@ function Door(day) {
     node.appendChild(innerNode);
     innerNode.innerHTML = day;
     innerNode.href = "#";
-    const linkedDoors = [13]; // Türen, die Links sind
+    const linkedDoors = [15]; // Türen, die Links sind
 
     if (currentDate.getMonth() + 1 < 12 || currentDate.getDate() < day) {
       // Türen für zukünftige Tage sperren
@@ -22,7 +22,7 @@ function Door(day) {
       };
     } else if (linkedDoors.includes(day)) {
       innerNode.href =
-        "https://docs.google.com/forms/d/e/1FAIpQLScdMN_rjJrZRJs_HbHtO3PZguMjw2nchlpJlnr0AxLT-HXOmA/viewform?usp=header"; // Link-Ziel hier ändern
+        "https://at.pinterest.com/search/pins/?rs=ac&len=2&q=gingerbread%20house&eq=ginger&etslf=8476"; // Link-Ziel hier ändern
       innerNode.target = "_blank"; // Öffnet in neuem Tab
     } else {
       const adventMessage = this.adventMessage;
