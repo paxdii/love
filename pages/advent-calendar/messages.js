@@ -30,7 +30,7 @@ const messages = [
     "Die wichtigen Dinge im Leben sollte man immer bei sich haben.\n Aber wie passt du in meinem Rucksack?",
   ],
   ["Link"],
-  ["16"],
+  ["Stilles vertrauen heilt das Herz"],
   [
     "Heute gehe ich shoppen und das fast nur für dich :) \n Ein Tipp was ich schon habe: heiß, rot.\n Alles Weitere darfst du leider nicht wissen. Wahrscheinlich weiß ich nichtmal mehr, weil ich ja noch nicht weiß was ich heute kaufe ;)",
   ],
