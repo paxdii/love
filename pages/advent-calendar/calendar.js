@@ -12,7 +12,7 @@ function Door(day) {
     node.appendChild(innerNode);
     innerNode.innerHTML = day;
     innerNode.href = "#";
-    const linkedDoors = [15]; // Türen, die Links sind
+    const linkedDoors = [19]; // Türen, die Links sind
 
     if (currentDate.getMonth() + 1 < 12 || currentDate.getDate() < day) {
       // Türen für zukünftige Tage sperren
@@ -22,7 +22,7 @@ function Door(day) {
       };
     } else if (linkedDoors.includes(day)) {
       innerNode.href =
-        "https://at.pinterest.com/search/pins/?rs=ac&len=2&q=gingerbread%20house&eq=ginger&etslf=8476"; // Link-Ziel hier ändern
+        "https://www.loom.com/share/7c0367fca424455db30fb7d03300c044?sid=398f0a4a-5192-474b-a60a-d5e89b5c94bb"; // Link-Ziel hier ändern
       innerNode.target = "_blank"; // Öffnet in neuem Tab
     } else {
       const adventMessage = this.adventMessage;
