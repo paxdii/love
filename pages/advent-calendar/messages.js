@@ -47,8 +47,14 @@ const messages = [
   [
     "Wo zwei ineinander übergehen, so hebt sich die Grenze des Endlichen zwischen ihnen auf. 💞",
   ],
-  ["21"],
-  ["22"],
-  ["23"],
+  [
+    "Rätsel: Ich glänze im Baum, bringe Freude und Glanz,\nversteckt ein Geheimnis – ich liebe den Tanz. \nWer bin ich?🎀✨ (Auflösung morgen)",
+  ],
+  [
+    "Auflösung von gestern: Weihnachtsornament 🎀✨ \nRätsel: Ich komme in der Nacht, auf leisen Sohlen, \nmit Sack und Mütze, von Kindern erwählt und empfohlen. \nWer bin ich?✨",
+  ],
+  [
+    "Auflösung von gestern: Der Weihnachtsmann 🎅 \nNun kommen wir auf dem Finalen Tag dieses Kalenders zu. Den 24.! \nMorgen erwartet dich das letzte Video und wundervolle Weihnachtsgrüße von mir! \nSchönen Tag wünsche ich dir mit deinen Bres in der Therme🧖🏻‍♀️",
+  ],
   ["24"],
 ];
